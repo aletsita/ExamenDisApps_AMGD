@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenDiseñoApps_AMGD.MainPage">
+
+    <StackLayout Padding="20" Spacing="10">
+        <Label Text="Calculadora Examen Diseño de Apps" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               TextColor="Black" />
+
+        <Entry x:Name="PrimNum" Placeholder="Ingresa el Primer Numero" Keyboard="Numeric" />
+        <Entry x:Name="SecNum" Placeholder="Ingresa el Segundo Numero" Keyboard="Numeric" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+            <Button x:Name="Suma" 
+                    Text="+"  
+                    Clicked="Suma_Clicked" 
+                    BackgroundColor="LightGray"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="CenterAndExpand" />
+
+
+            <Button x:Name="Resta" 
+                    Text="-" 
+                    Clicked="Resta_Clicked"  
+                    BackgroundColor="LightGray"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="CenterAndExpand" />
+
+
+            <Button x:Name="Multiplicacion" 
+                    Text="×" 
+                    Clicked="Multiplicacion_Clicked"  
+                    BackgroundColor="LightGray" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="CenterAndExpand" />
+
+            <Button x:Name="Division" 
+                    Text="÷" 
+                    Clicked="Division_Clicked" 
+                    BackgroundColor="LightGray" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+
